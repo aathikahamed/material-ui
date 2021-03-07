@@ -59,7 +59,7 @@ export default function MenuAppBar() {
             Photos
           </Typography>
           {auth && (
-            <div>
+            <>
               <IconButton
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
@@ -87,7 +87,7 @@ export default function MenuAppBar() {
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
               </Menu>
-            </div>
+            </>
           )}
         </Toolbar>
       </AppBar>
